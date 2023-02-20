@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using EC05_C_sharp_EntityFrameworkCore.Models.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,7 +37,9 @@ namespace EC05_C_sharp_EntityFrameworkCore.Contexts
 
         #region entities
 
-
+        public DbSet<AddressEntity> Addresses { get; set; } = null!;
+        public DbSet<CustomerEntity> Customers { get; set; } = null!;
+        public DbSet<ProductEntity> Products { get; set; } = null!;
 
         #endregion
     }
