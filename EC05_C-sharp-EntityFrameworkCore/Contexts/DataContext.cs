@@ -40,7 +40,7 @@ namespace EC05_C_sharp_EntityFrameworkCore.Contexts
         public DbSet<AddressEntity> Addresses { get; set; } = null!;
         public DbSet<CustomerEntity> Customers { get; set; } = null!;
         public DbSet<ProductEntity> Products { get; set; } = null!;
-
+        public DbSet<EmployeeEntity> Employees { get; set; } = null!;
         #endregion
     }
 }
